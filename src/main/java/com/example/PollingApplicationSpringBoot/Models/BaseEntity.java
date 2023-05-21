@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.MappedSuperclass;
+import java.util.Date;
 
 @MappedSuperclass
 @Getter
@@ -12,8 +13,8 @@ import javax.persistence.MappedSuperclass;
 @Data
 public class BaseEntity {
 
-Data createdDate;
-Data updatedDate;
+Date createdDate;
+Date updatedDate;
 Boolean isActive;
 
 }

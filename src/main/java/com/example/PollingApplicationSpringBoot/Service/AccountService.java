@@ -17,6 +17,9 @@ public class AccountService {
     @Autowired
     AccountRepository accountRepository;
 
+    public void saveAccount(Account account) {
+        accountRepository.save(account);
+    }
     public GetAccountResponse getAccountById(Long AccountId) {
         Optional<Account> optionalAccount = accountRepository.findById(AccountId);
         if (!optionalAccount.isEmpty()) {
