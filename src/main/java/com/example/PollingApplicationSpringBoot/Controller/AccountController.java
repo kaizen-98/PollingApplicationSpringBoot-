@@ -36,6 +36,8 @@ public class AccountController {
         Account account = new Account();
         account.setUserName("Ali");
         account.setPassWord("123abc");
+        account.setUserName("Mohammed");
+        account.setPassWord("abc123");
         accountService.saveAccount(account);
     }
 
