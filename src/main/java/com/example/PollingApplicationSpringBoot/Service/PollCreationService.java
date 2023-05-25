@@ -19,7 +19,7 @@ public class PollCreationService {
     PollCreationRepository pollCreationRepository;
 
     public void savePollCreation(PollCreation pollCreation) {
-        pollCreationRepository.save( pollCreation);
+        pollCreationRepository.save(pollCreation);
     }
 
     public GetPollCreationResponse getPollCreationById(Long PollCreationId){
